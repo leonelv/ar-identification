@@ -1,0 +1,16 @@
+{
+  "name": "@ar-identification/decode",
+  "description": "Argentinian identification data decoder",
+  "source": "./src/index.ts",
+  "module": "./dist/decode.js",
+  "types": "./dist/index.d.ts",
+  "version": "0.1.0",
+  "scripts": {
+    "build": "microbundle -f esm",
+    "dev": "yarn build --watch"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.3",
+    "zod": "^3.17.3"
+  }
+}

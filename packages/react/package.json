@@ -1,0 +1,22 @@
+{
+  "name": "@ar-identification/react",
+  "description": "Argentinian identification reader and data decoder",
+  "type": "module",
+  "source": "./src/index.ts",
+  "version": "0.1.0",
+  "main": "./dist/index.cjs.js",
+  "module": "./dist/index.module.js",
+  "types": "./dist/types/index.d.ts",
+  "license": "MIT",
+  "scripts": {
+    "build": "microbundle --jsx React.createElement --jsxFragment React.Fragment -f esm",
+    "dev": "yarn build --watch"
+  },
+  "peerDependencies": {
+    "@ar-identification/decode": "0.1.0",
+    "@zxing/browser": "^0.1.1",
+    "@zxing/library": "^0.19.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}

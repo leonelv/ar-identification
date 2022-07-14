@@ -1,0 +1,14 @@
+export const SPLIT_CHAR = "@";
+export const DATA_LEN = 9;
+export const ID_LEN = 11;
+export const DNI_MIN_LEN = 6;
+export const DNI_MAX_LEN = 8;
+export const DATE_LEN = 10;
+export const DATE_REGEX = /^([0-3][0-9])\/((0|1)[0-9]\/\d{4})$/g;
+export const SEX_LEN = 1;
+export const COPY_LEN = 1;
+export const COPY_REGEX = /^[A-Z]$/;
+export const SEX_REGEX = /^(M|F|X)$/;
+export const CUIL_BASE_LEN = 3;
+export const CUIL_BASE_REGEX = /^2(0|3|4|7)\d$/;
+export const RENEW_AGE = 14;
