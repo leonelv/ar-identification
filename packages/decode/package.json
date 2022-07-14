@@ -5,6 +5,10 @@
   "module": "./dist/decode.js",
   "types": "./dist/index.d.ts",
   "version": "0.1.0",
+  "files": [
+    "dist/*",
+    "README.md"
+  ],
   "scripts": {
     "build": "microbundle -f esm",
     "dev": "yarn build --watch"
