@@ -4,10 +4,13 @@
   "type": "module",
   "source": "./src/index.ts",
   "version": "0.1.0",
-  "main": "./dist/index.cjs.js",
   "module": "./dist/index.module.js",
   "types": "./dist/types/index.d.ts",
   "license": "MIT",
+  "files": [
+    "dist/*",
+    "README.md"
+  ],
   "scripts": {
     "build": "microbundle --jsx React.createElement --jsxFragment React.Fragment -f esm",
     "dev": "yarn build --watch"
