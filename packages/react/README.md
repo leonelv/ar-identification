@@ -5,7 +5,7 @@ An scanner for Argentinian DNI's.
 ## Installation
 
 ```bash
-yarn add @zxing/browser@^0.1.1 @zxing/librar@^0.19.1 @ar-identification/decode@0.1.0 @ar-identification/react@0.1.0
+yarn add @zxing/browser@^0.1.1 @zxing/library@^0.19.1 @ar-identification/decode@0.1.0 @ar-identification/react@0.1.0
 ```
 
 ## Usage/Examples
