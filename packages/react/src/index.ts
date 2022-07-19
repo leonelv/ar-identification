@@ -1,1 +1,1 @@
-export { default as DNIScanner, DNIScannerProps } from "./components/scanner";
+export { default as Scanner, ScannerProps } from "./components/scanner";

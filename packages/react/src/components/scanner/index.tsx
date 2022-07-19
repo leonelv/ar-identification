@@ -1,27 +1,20 @@
 import React from "react";
 import { ratio } from "../../constants";
-import useDNIScanner, { useDNIScannerProps } from "../../hooks/useDNIScanner";
+import useScanner, { useScannerProps } from "../../hooks/useScanner";
 import AspectRatio from "../aspect-ratio";
 
-export interface DNIScannerProps extends useDNIScannerProps {
+export interface ScannerProps extends useScannerProps {
   className?: string;
 }
 
-const DNIScanner = ({ onScanError, onScanSuccess, className = "" }: DNIScannerProps) => {
-  const { videoRef, handleOnPlay } = useDNIScanner({ onScanError, onScanSuccess });
+const Scanner = ({ onScanError, onScanSuccess, className = "", allowQR, QRValidationFn }: ScannerProps) => {
+  const { videoRef, handleOnPlay } = useScanner({ onScanError, onScanSuccess, allowQR, QRValidationFn });
 
   return (
     <AspectRatio ratio={ratio} className={className}>
-      <video
-        playsInline
-        controls={false}
-        autoPlay
-        ref={videoRef}
-        style={{ width: "100%" }}
-        onPlay={handleOnPlay}
-      ></video>
+      <video playsInline controls={false} autoPlay ref={videoRef} style={{ width: "100%" }} onPlay={handleOnPlay} />
     </AspectRatio>
   );
 };
 
-export default DNIScanner;
+export default Scanner;
