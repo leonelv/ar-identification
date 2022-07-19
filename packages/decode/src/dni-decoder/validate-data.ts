@@ -5,7 +5,7 @@ import validationSchema from "./validation-schema";
 
 const validateData = async (data: string) => {
   const splittedString = splitDNIData(data);
-  const hasCorrectLength = splittedString.length === DATA_LEN;
+  const hasCorrectLength = splittedString.length === DATA_LEN || splittedString.length === DATA_LEN - 1;
 
   if (hasCorrectLength) {
     const [id, surname, name, sex, dni, copy, dateOfBirth, dateOfIssue, cuilBase] = splittedString;

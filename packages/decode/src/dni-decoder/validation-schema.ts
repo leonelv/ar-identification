@@ -22,7 +22,7 @@ const validationSchema = object({
   dni: string().min(DNI_MIN_LEN).max(DNI_MAX_LEN),
   dateOfBirth: string().length(DATE_LEN).regex(DATE_REGEX),
   dateOfIssue: string().length(DATE_LEN).regex(DATE_REGEX),
-  cuilBase: string().length(CUIL_BASE_LEN).regex(CUIL_BASE_REGEX),
+  cuilBase: string().length(CUIL_BASE_LEN).regex(CUIL_BASE_REGEX).optional(),
 });
 
 export default validationSchema;

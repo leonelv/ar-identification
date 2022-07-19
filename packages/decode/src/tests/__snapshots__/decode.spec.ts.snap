@@ -14,3 +14,32 @@ Object {
   "surname": "PITO",
 }
 `;
+
+exports[`decode should return a parsed DNI object with cuil 1`] = `
+Object {
+  "copy": "B",
+  "cuil": "20-1234567-4",
+  "dateOfBirth": 1998-11-22T03:00:00.000Z,
+  "dateOfExpiry": 2033-03-12T03:00:00.000Z,
+  "dateOfIssue": 2018-03-12T03:00:00.000Z,
+  "dni": "1234567",
+  "id": "00123456789",
+  "name": "ELSA",
+  "sex": "FEMALE",
+  "surname": "PITO",
+}
+`;
+
+exports[`decode should return a parsed DNI object without cuil 1`] = `
+Object {
+  "copy": "B",
+  "dateOfBirth": 1998-11-22T03:00:00.000Z,
+  "dateOfExpiry": 2033-03-12T03:00:00.000Z,
+  "dateOfIssue": 2018-03-12T03:00:00.000Z,
+  "dni": "1234567",
+  "id": "00123456789",
+  "name": "ELSA",
+  "sex": "FEMALE",
+  "surname": "PITO",
+}
+`;

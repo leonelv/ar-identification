@@ -3,7 +3,7 @@
   "description": "Argentinian identification reader and data decoder",
   "type": "module",
   "source": "./src/index.ts",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "module": "./dist/react.module.js",
   "types": "./dist/types/index.d.ts",
   "license": "MIT",
@@ -16,7 +16,7 @@
     "dev": "yarn build --watch"
   },
   "peerDependencies": {
-    "@ar-identification/decode": "0.1.0",
+    "@ar-identification/decode": "0.1.1",
     "@zxing/browser": "^0.1.1",
     "@zxing/library": "^0.19.1",
     "react": "^18.2.0",

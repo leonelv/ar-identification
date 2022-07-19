@@ -12,8 +12,11 @@ const assembleObject = ({ id, surname, name, sex, dni, copy, dateOfBirth, dateOf
   parsedDNI.dateOfIssue = parsedDOI.toDate();
   parsedDNI.dateOfBirth = parsedDOB.toDate();
   parsedDNI.dateOfExpiry = getDateOfExpiry({ dateOfIssue: parsedDOI, dateOfBirth: parsedDOB });
-  parsedDNI.cuil = createCuil({ cuilBase, dni });
   parsedDNI.sex = getSex(sex as UnparsedSex);
+
+  if (cuilBase) {
+    parsedDNI.cuil = createCuil({ cuilBase, dni });
+  }
 
   return parsedDNI as DNI;
 };

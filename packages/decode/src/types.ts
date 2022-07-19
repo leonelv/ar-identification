@@ -15,6 +15,6 @@ export interface DNI {
   copy: string;
   sex: Sex;
   dni: string;
-  cuil: string;
+  cuil?: string;
   id: string;
 }
